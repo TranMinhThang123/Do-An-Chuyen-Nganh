@@ -10,8 +10,22 @@
 <body>
     <div>
         <div>
-            <p>Hello</p>
+            {% if brand %}
+            <div class="row">
+                <p> This image most likely belongs to <strong>{{brand}}</strong>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="/static/output/bar.png" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/static/output/origin_image.png" style="width:100%">
+                </div>
+            </div>
+            {% endif %}
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
